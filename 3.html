@@ -3,18 +3,67 @@
     <head>
         <title>WEB1 - JavaScript</title>
         <meta charset="utf-8">
+        <style>
+            body{
+                margin:0;
+            }
+            #grid{
+                display:grid;
+                grid-template-columns: 150px 1fr;
+
+            }
+            a{
+                color:black;
+                text-decoration: none;
+            }
+            ol{
+                border-right:1px grey solid;
+                margin:0;
+                padding:20px;
+            }
+            #grid ol{
+                padding-left:34px;
+            }
+            #grid #article{
+                padding-left:21px;
+            }
+            
+            h1{
+                font-size:45px;
+                text-align: center;
+                border-bottom:1px solid grey;
+                margin:0;
+                padding:20px;
+            }
+            @media(max-width:800px){
+                #grid{
+                    display:block;
+                }
+                ol{
+                    border-right:none;
+                }
+                h1{
+                    border-bottom:none;
+                }
+            }
+            
+        </style>
     </head>
     <body>
         <h1><a href="index.html"> WEB</a></h1>
-        <ol> <!-- ordered list -->
-            <li><a href="1.html">HTML</a></li>
-            <li><a href="2.html">CSS</a></li>
-            <li><a href="3.html">JavaScript</a></li>
-        </ol>
-        <!-- ul = unordered list -->
-        <h2>JavaScript</h2>
-        <p>
-            JavaScript(JS)는 가벼운 인터프리터 또는 JIT 컴파일 프로그래밍 언어로, 일급 함수를 지원합니다. 웹 페이지의 스크립트 언어로서 제일 유명하지만 Node.js, Apache CouchDB, Adobe Acrobat처럼 많은 비 브라우저 환경에서도 사용하고 있습니다. JavaScript는 프로토타입 기반의 동적 다중 패러다임 스크립트 언어로, 객체지향형, 명령형, 선언형(함수형 프로그래밍 등) 스타일을 지원합니다. 자세한 내용은 JavaScript에 대하여를 참고하세요.
-        </p>
+        <div id="grid">
+            <ol> <!-- ordered list -->
+                <li><a href="1.html">HTML</a></li>
+                <li><a href="2.html">CSS</a></li>
+                <li><a href="3.html">JavaScript</a></li>
+            </ol>
+            <!-- ul = unordered list -->
+            <div id="article">
+                <h2>JavaScript</h2>
+                <p>
+                    JavaScript(JS)는 가벼운 인터프리터 또는 JIT 컴파일 프로그래밍 언어로, 일급 함수를 지원합니다. 웹 페이지의 스크립트 언어로서 제일 유명하지만 Node.js, Apache CouchDB, Adobe Acrobat처럼 많은 비 브라우저 환경에서도 사용하고 있습니다. JavaScript는 프로토타입 기반의 동적 다중 패러다임 스크립트 언어로, 객체지향형, 명령형, 선언형(함수형 프로그래밍 등) 스타일을 지원합니다. 자세한 내용은 JavaScript에 대하여를 참고하세요.
+                </p>
+            </div>
+        </div>
     </body>
 </html>
